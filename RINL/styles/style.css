@@ -1,0 +1,90 @@
+body{
+    margin: 0%;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+article{
+    height: 250px;
+    width: 500px;
+
+}
+/* .button{
+    background-color: aqua;
+    color: green;
+    margin: 50px;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-size: larger;
+} */
+.image{
+    width: 500px;
+    height:auto;
+    /* border-radius: 40px; */
+    float: right;
+}
+section{
+    height: 500px;
+    font-size: large;
+    background-color: lightcyan;
+}
+li{
+     display: inline-block; 
+     height: 20px;
+     justify-content:space-between;
+     text-align: center;
+     list-style: none;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 50px;
+    background-color: black;
+    font-size: large;
+}
+.needs{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 50px;
+    background-color: black;
+    font-size: large;
+    color: white;
+}
+.flex-container{
+    height: auto;
+    width: 500px;
+    background-color: lightcyan;
+    border: solid black;
+    /* display: flex; */
+    justify-content: space-evenly;
+}
+.flex-elements{
+    height: 50px;
+    width: auto;
+    background-color: lightcyan;
+    border: solid  black;
+}
+/* .container{
+    justify-content: space-between;
+    align-items: center;
+} */
+footer{
+    height: 65px;
+    width: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    float: bottom;
+}
+.Contract{
+    font-size: medium;  
+}

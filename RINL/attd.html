@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .attendance-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            color:black;
+            font-size: 24px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: black;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    width: 180px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-row input[type="number"] {
+    width: 80px;
+}
+.form-row input[type="text"] {
+            width: 200px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="attendance-container">
+        <h2>Attendance</h2>
+        <form action="db_conn.php" method="post">
+            <div class="form-row">
+                <label for="Employee Name">Employee Name:</label>
+                <input type="text" class="input-field" id="total-working-days">
+            </div>
+            <div class="form-row">
+                
+                <label for="Aadhar no.">Aadhar No.</label>
+        <select id="skill" name="skill" required>
+          <option value="">Select Aadhar no. </option>
+          <option value="">1234 4321 1423</option>
+          <option value="">2344 5324 7532</option>
+          <option value="">2334 6543 7896</option>
+        </select>
+            </div>
+            <div class="form-row">
+                <label for="total-working-days">Total Working Days:</label>
+                <input type="number" class="input-field" id="total-working-days">
+            </div>
+            <div class="form-row">
+                <label for="attended-days">Attended Days:</label>
+                <input type="number" class="input-field" id="attended-days">
+            </div>
+            <div class="form-row">
+                <label for="overtime-hours">Overtime Hours:</label>
+                <input type="number" class="input-field" id="overtime-hours">
+            </div>
+            <div class="form-row">
+                <label for="paid-holidays">Paid Holidays:</label>
+                <input type="number" class="input-field" id="paid-holidays">
+            </div>
+            <button class="submit-btn" onclick="submitAttendance()">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function submitAttendance() {
+            var names = document.getElementById('names').value;
+            var totalWorkingDays = document.getElementById('total-working-days').value;
+            var attendedDays = document.getElementById('attended-days').value;
+            var overtimeHours =  document.getElementById('overtime-hours').value;
+            var paidHolidays = document.getElementById('paid-holidays').value;
+
+            // Perform further actions with the entered attendance details
+            console.log('Names:', names);
+            console.log('Total Working Days:', totalWorkingDays);
+            console.log('Attended Days:', attendedDays);
+            console.log('Overtime Hours:', overtimeHours);
+            console.log('Paid Holidays:', paidHolidays);
+        }
+    </script>
+</body>
+</html>
